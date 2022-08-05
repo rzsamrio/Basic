@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../cs50/cs50.h"
+#include "/data/data/com.termux/files/home/clibrary/cs50.h"
 
 // Declaration of user defined functions and variables
 float remit (void);
@@ -44,6 +44,10 @@ int main(void)
     if (day != 'y')
     {
         moove_e = 12000 - net_e;
+	if (moove_e < 0)
+	{
+		moove_e = 0;
+	}
     }
     else
     {
