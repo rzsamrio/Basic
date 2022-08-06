@@ -22,7 +22,7 @@ void print_inv (void);
 int main(void)
 {
     // Greet User
-    printf("Welcome to Moove Invoice Calculator v1.1\nPlease Input the following (Enter 0 if unapplicable):\n");
+    printf("Welcome to Moove Invoice Calculator v1.0.1\nPlease Input the following (Enter 0 if unapplicable):\n");
 
     // Get User input 
     uber_e = get_float("\nUber Earnings: ");

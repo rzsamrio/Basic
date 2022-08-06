@@ -1,0 +1,9 @@
+# Version 1.1.0
+
+*Add KPI checks
+*Improve design
+	**Align text
+	**Add borders	<pending c>
+*Improve user experience
+	**Add help function
+
