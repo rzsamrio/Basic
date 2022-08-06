@@ -1,2 +1,3 @@
-# Household-Projects
-Apps developed to do personal basic household and work tasks
+# Basic
+Contains programs and source code of basic projects made to attend to personak or work related issues.
+
