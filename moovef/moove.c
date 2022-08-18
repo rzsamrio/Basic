@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "/data/data/com.termux/files/home/clibrary/cs50.h"
+#include <cs50.h>
 
 // Declaration of user defined functions and variables
 float remit (void);
