@@ -53,6 +53,8 @@ dkms.conf
 
 # Currently being modified files
 *.swp
+*.*.sw*
+*~
 
 # Extensionless files
 *
