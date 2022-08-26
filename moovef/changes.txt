@@ -1,0 +1,5 @@
+const Moove earning = 0
+Net balance = uber balance
+Daily rem = 0.3 * net earningis
+
+
