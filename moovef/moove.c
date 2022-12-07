@@ -8,7 +8,6 @@ float uber_e;
 float net_e;
 float fines;
 float p_due;
-float moove_e;
 float cash_accept;
 float bal_uber;
 float rem_daily;
@@ -40,22 +39,8 @@ int main(void)
     //Calculate Uber balance
     bal_uber = uber_e - cash_accept;
     
-    // Calculate Earnings made from Moove
-    if (day != 'y')
-    {
-        moove_e = 12000 - net_e;
-	if (moove_e < 0)
-	{
-		moove_e = 0;
-	}
-    }
-    else
-    {
-        moove_e = 0;
-    }
-    
     // Calculate the cumulative balance with Moove
-    bal_moove = moove_e + bal_uber;
+    bal_moove = bal_uber;
     
     // Calculate the Total amount due for payment
     due = (bal_moove + p_due) - (rem_daily + fines);
@@ -86,11 +71,11 @@ float remit (void)
     if (day == 'y')
     {
         rem_daily = 0;
-     }
-     else
-     {
-         rem_daily = 7000;
-     }
+    }
+    else
+    {
+        rem_daily = 7000;
+    }
      
     // Return the remittance value
     return rem_daily;
@@ -113,7 +98,7 @@ void print_inv (void)
         printf("\n");
     }
     
-    printf("Moove Earning:                %.2f\n", moove_e);
+    printf("Moove Earning:                %.2f\n", 0.0);
     printf("Net Balance with Moove:       %.2f\n", bal_moove);
 
     // Create a border segment: 2
