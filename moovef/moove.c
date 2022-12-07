@@ -16,6 +16,7 @@ float bal_moove; // Net Balance with moove
 float due_today;
 float rem_today;
 float remit_c;
+float promo;
 void print_inv (void);
 
 int main(void)
@@ -28,7 +29,8 @@ int main(void)
     cash_accept = get_float("Total Cash Collected: ");
     booking = get_float("Booking Fee: ");
     fines = get_float("Fines and Replacement cost: ");
-    p_due = get_float("Outstanding payments/dues (negative for dues): ");  
+    p_due = get_float("Outstanding payments/dues (negative for dues): "); 
+    promo = get_float("Promo value? (0 if nil): ");
    
     //Calculate Net Earnings
     net_e = uber_e - booking;
@@ -71,11 +73,11 @@ float remit (float amt)
     if (day == 'y')
     {
         rem_daily = 0;
-     }
-     else
-     {
+    }
+    else
+    {
          rem_daily = amt * -0.3;
-     }
+    }
      
     // Return the remittance value
     return rem_daily;
